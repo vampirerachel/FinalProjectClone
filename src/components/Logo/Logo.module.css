@@ -1,0 +1,62 @@
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.vector-container {
+    width: 65px;
+}
+
+.text-container {
+    display: flex;
+    gap: 5px;
+    /* margin-top: 40px; */
+    margin-left: -15px;
+    cursor: pointer;
+}
+
+.svg-link {
+    display: block;
+}
+
+.logo {
+    max-width: 200%;
+    height: auto;
+    margin-left: 0;
+}
+
+@media screen and (min-width: 320px) {
+    .vector-container {
+            width: 71px;
+        }
+}
+ 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .logo {
+        max-width: 68%;
+    }
+
+    .text-container {
+        display: flex;
+        margin-top: 0px;
+    }
+
+    .text-container .svg-link {
+        margin-right: -28px;
+    }
+
+    .svg-link {
+        width: 75px;
+        height: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .logo {
+        max-width: 65%;
+    }
+
+    .text-container {
+        display: none;
+    }
+}
